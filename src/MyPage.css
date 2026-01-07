@@ -1,0 +1,200 @@
+/* src/MyPage.css (青ベース・デコレーション版) */
+
+.mypage-container {
+padding: 20px;
+animation: fadeIn 0.3s ease-out;
+}
+
+/* 1. ヘッダーロゴ */
+.mypage-header {
+margin-bottom: 24px;
+width: 100vw; /* 画面の幅 100% */
+margin-left: -20px; /* 左のパディング(20px)を打ち消す */
+margin-top: -20px; /* 上のパディング(20px)を打ち消す */
+}
+
+.logo-img {
+width: 100%; /* 幅を100%にする */
+height: auto; /* 高さは自動調整 */
+object-fit: cover; /* 画像の比率を保ったまま全体を覆う */
+}
+
+@media (min-width: 481px) {
+.mypage-header {
+    /* スマホ用の全画面設定をリセット */
+    width: 100%; /* 幅を100%にする */
+    height: auto; /* 高さは自動調整 */
+    object-fit: cover; /* 画像の比率を保ったまま全体を覆う */
+    margin-left: 0;
+    margin-top: 0;
+    /* PCではロゴを中央寄せ（お好みで） */
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img {
+    /* PCでは幅を30%に */
+    width: 100%; 
+    /* PCコンテナの角丸に合わせる */
+    border-radius: 20px;
+    /* object-fit: cover だと画像が切れる場合、contain に変更 */
+    object-fit: contain; 
+}
+}
+
+/* 2. ユーザープロフィール */
+.user-profile-card {
+display: flex;
+align-items: center;
+/* 青系のグラデーション背景 */
+background: linear-gradient(135deg, #74f1bf, #4ef976);
+color: white;
+border-radius: 16px;
+padding: 20px;
+margin-bottom: 32px;
+box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
+}
+
+.user-icon {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+margin-right: 16px;
+object-fit: cover;
+border: 2px solid white;
+}
+
+.user-info {
+flex: 1;
+}
+
+.user-greeting {
+font-size: 14px;
+color: #0758ef; /* 白系の文字 */
+margin: 0;
+font-weight: 500;
+}
+
+.user-name {
+font-size: 20px;
+font-weight: 700;
+color: #0419db; /* 白文字 */
+margin: 2px 0 0 0;
+}
+
+/* 3. 担当メンター */
+.mentor-section {
+margin-bottom: 32px;
+}
+
+.mentor-section h3 {
+font-size: 16px;
+font-weight: 700;
+color: #333;
+margin-bottom: 12px;
+}
+
+.mentor-card-list {
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+.mentor-link-card {
+display: flex;
+align-items: center;
+background-color: #ffffff;
+border: 1px solid #eee;
+border-radius: 12px;
+padding: 12px;
+text-decoration: none;
+color: #333;
+transition: box-shadow 0.2s, transform 0.2s;
+/* 左側に青いアクセントボーダー */
+border-left: 4px solid #007bff;
+}
+.mentor-link-card:hover {
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+transform: translateY(-2px);
+}
+
+.mentor-link-image {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+margin-right: 12px;
+object-fit: cover;
+}
+
+.mentor-link-info {
+flex: 1;
+}
+
+.mentor-link-role {
+font-size: 11px;
+font-weight: 600;
+color: #005fec; /* 緑系から青系に変更 */
+}
+
+.mentor-link-name {
+font-size: 15px;
+font-weight: 600;
+margin: 2px 0 0 0;
+}
+
+.arrow-icon-small {
+font-size: 20px;
+color: #ccc;
+font-weight: bold;
+}
+
+
+/* 4. アクションボタン */
+.action-menu {
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+.action-button {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+border-radius: 12px;
+text-decoration: none;
+font-size: 16px;
+font-weight: 700;
+transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
+border: 1px solid transparent;
+}
+
+.action-button.primary {
+background-color: #4a9cf4;
+color: white;
+box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+.action-button.primary:hover {
+background-color: #0056b3;
+transform: translateY(-2px);
+box-shadow: 0 6px 16px rgba(0, 123, 255, 0.3);
+}
+
+/* 「探求を計画する」ボタンのデザインも変更 */
+.action-button.secondary {
+    background-color: #f565d3;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+.action-button.secondary:hover {
+background-color: #f10e5a; /* ホバー時に薄いピンクに */
+transform: translateY(-2px);
+box-shadow: 0 6px 16px rgba(233, 30, 99, 0.1); /* 影もピンク系に */
+}
+
+.arrow-icon {
+font-size: 18px;
+font-weight: bold;
+}

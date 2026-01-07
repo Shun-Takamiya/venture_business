@@ -1,0 +1,210 @@
+/* src/PlanPage.css */
+
+.plan-page {
+padding: 16px;
+animation: fadeIn 0.3s ease-out;
+}
+
+/* 戻るボタン */
+.back-button {
+background: none;
+border: none;
+color: #007bff;
+font-size: 16px;
+font-weight: 600;
+cursor: pointer;
+padding: 8px 0;
+margin-bottom: 16px;
+}
+
+.plan-title {
+font-size: 24px;
+font-weight: 700;
+margin-bottom: 24px;
+color: #1a1a1a;
+}
+
+.plan-section {
+margin-bottom: 32px;
+}
+
+.plan-section h2 {
+font-size: 18px;
+font-weight: 700;
+margin-bottom: 12px;
+/* 青ベースのアクセント */
+border-bottom: 2px solid #005fec;
+padding-bottom: 4px;
+color: #005fec;
+}
+
+/* 1. 目標カード */
+.goal-card {
+background: #f0f8ff; /* 薄い青色 */
+border-radius: 12px;
+padding: 16px;
+border-left: 4px solid #007bff; /* 青いアクセント */
+box-shadow: 0 4px 12px rgba(0, 123, 255, 0.05);
+}
+
+.goal-card label {
+font-size: 12px;
+font-weight: 600;
+color: #0056b3; /* 濃い青 */
+display: block;
+text-transform: uppercase;
+}
+
+.goal-card p {
+font-size: 15px;
+font-weight: 500;
+color: #333;
+margin: 4px 0 16px 0;
+}
+.goal-card p:last-child {
+margin-bottom: 0;
+}
+
+/* 2. カレンダーコンテナ */
+.calendar-container {
+/* カレンダーライブラリを枠線や影で囲む */
+border: 1px solid #eee;
+border-radius: 12px;
+padding: 12px;
+background: #fff;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+margin-bottom: 16px; /* 予定リストとの間に隙間 */
+}
+
+/* react-calendar のデフォルトCSSを上書きしてデザインを調整 */
+.calendar-container .react-calendar {
+border: none;
+margin: 0 auto; /* ◀ 中央寄せ */
+}
+/* 土曜の色を青系に */
+.calendar-container .react-calendar__month-view__weekdays__weekday:nth-child(7) {
+color: #007bff;
+}
+/* 日曜の色をピンク系に */
+.calendar-container .react-calendar__month-view__weekdays__weekday:nth-child(1) {
+color: #E91E63;
+}
+/* 今日の日付のスタイル */
+.calendar-container .react-calendar__tile--now {
+background: #f0f8ff; /* 薄い青 */
+border-radius: 50%;
+}
+/* 選択中の日付のスタイル */
+.calendar-container .react-calendar__tile--active {
+background: #007bff; /* 青 */
+color: white;
+border-radius: 50%;
+}
+.calendar-container .react-calendar__tile--active:hover {
+background: #0056b3;
+}
+
+
+/* 近日中の予定リスト (カレンダーの下に配置) */
+.calendar-event-list {
+text-align: left;
+color: #333;
+}
+.calendar-event-list ul {
+padding-left: 20px;
+margin: 8px 0 0 0;
+font-size: 14px;
+}
+.calendar-event-list li {
+margin-bottom: 4px;
+}
+
+/* 3. Todoリスト */
+.todo-input-area {
+display: flex;
+gap: 8px;
+margin-bottom: 16px;
+}
+
+.todo-input {
+flex: 1;
+border: 1px solid #ccc;
+border-radius: 8px;
+padding: 10px 12px;
+font-size: 15px;
+}
+.todo-input:focus {
+outline: none;
+border-color: #007bff;
+box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+.todo-add-button {
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 8px;
+padding: 0 16px;
+font-size: 14px;
+font-weight: 600;
+cursor: pointer;
+transition: background-color 0.2s;
+}
+.todo-add-button:hover {
+background-color: #0056b3;
+}
+
+.todo-list {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.todo-item {
+display: flex;
+align-items: center;
+font-size: 16px;
+padding: 12px 8px;
+border-bottom: 1px solid #f0f0f0;
+cursor: pointer;
+user-select: none;
+transition: background-color 0.1s;
+}
+.todo-item:hover {
+background-color: #f9f9f9;
+}
+
+.todo-checkbox {
+width: 20px;
+height: 20px;
+border: 2px solid #ccc;
+border-radius: 50%; /* 丸いチェックボックス */
+margin-right: 12px;
+transition: border-color 0.2s, background-color 0.2s;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.todo-text {
+flex: 1;
+color: #333;
+transition: color 0.2s, text-decoration 0.2s;
+}
+
+/* 完了時のスタイル */
+.todo-item.completed .todo-text {
+color: #aaa;
+text-decoration: line-through;
+}
+.todo-item.completed .todo-checkbox {
+background-color: #007bff;
+border-color: #007bff;
+}
+/* チェックマーク（完了時） */
+.todo-item.completed .todo-checkbox::after {
+content: '✔';
+color: white;
+font-size: 12px;
+font-weight: bold;
+}

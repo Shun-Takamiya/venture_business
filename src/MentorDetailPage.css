@@ -1,0 +1,111 @@
+/* src/MentorDetailPage.css */
+
+.detail-page {
+padding: 16px;
+animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(10px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+.back-button {
+background: none;
+border: none;
+color: #007bff;
+font-size: 16px;
+font-weight: 600;
+cursor: pointer;
+padding: 8px 0;
+margin-bottom: 16px;
+}
+
+.detail-image {
+width: 120px;
+height: 120px;
+border-radius: 20px;
+object-fit: cover;
+margin-bottom: 16px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.detail-name {
+font-size: 24px;
+font-weight: 700;
+text-align: center;
+margin: 0 0 4px 0;
+}
+
+.detail-affiliation,
+.detail-lab {
+text-align: center;
+font-size: 15px;
+color: #555;
+margin: 0 0 4px 0;
+line-height: 1.4;
+}
+.detail-affiliation {
+font-weight: 600;
+}
+
+.detail-tags {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 8px;
+margin: 16px 0;
+}
+
+/* App.cssの .tag スタイルを再利用 */
+.detail-tags .tag {
+background-color: #e6f7f0; /* 薄い緑 */
+color: #006442; /* 濃い緑 */
+font-size: 12px;
+font-weight: 600;
+padding: 4px 10px;
+border-radius: 6px;
+}
+
+.detail-section {
+margin-top: 24px;
+border-top: 1px solid #f0f0f0;
+padding-top: 20px;
+}
+
+.detail-section h2 {
+font-size: 18px;
+font-weight: 700;
+margin-bottom: 12px;
+}
+
+.detail-section p,
+.detail-section ul {
+font-size: 15px;
+line-height: 1.7;
+color: #333;
+}
+
+.detail-section ul {
+padding-left: 20px;
+}
+
+.contact-button {
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 12px;
+padding: 14px;
+font-size: 16px;
+font-weight: 700;
+cursor: pointer;
+width: 100%;
+margin-top: 32px;
+transition: background-color 0.2s;
+}
+
+.contact-button:hover {
+background-color: #0056b3;
+}
