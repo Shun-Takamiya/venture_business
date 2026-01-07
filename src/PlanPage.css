@@ -9,7 +9,7 @@ animation: fadeIn 0.3s ease-out;
 .back-button {
 background: none;
 border: none;
-color: #007bff;
+color: #2a6d44;
 font-size: 16px;
 font-weight: 600;
 cursor: pointer;
@@ -21,7 +21,7 @@ margin-bottom: 16px;
 font-size: 24px;
 font-weight: 700;
 margin-bottom: 24px;
-color: #1a1a1a;
+color: #21412e;
 }
 
 .plan-section {
@@ -33,9 +33,9 @@ font-size: 18px;
 font-weight: 700;
 margin-bottom: 12px;
 /* 青ベースのアクセント */
-border-bottom: 2px solid #005fec;
+border-bottom: 2px solid #2a6d44;
 padding-bottom: 4px;
-color: #005fec;
+color: #2a6d44;
 }
 
 /* 1. 目標カード */
@@ -43,14 +43,14 @@ color: #005fec;
 background: #f0f8ff; /* 薄い青色 */
 border-radius: 12px;
 padding: 16px;
-border-left: 4px solid #007bff; /* 青いアクセント */
+border-left: 4px solid #2a6d44; /* 青いアクセント */
 box-shadow: 0 4px 12px rgba(0, 123, 255, 0.05);
 }
 
 .goal-card label {
 font-size: 12px;
 font-weight: 600;
-color: #0056b3; /* 濃い青 */
+color: #2a6d44; /* 濃い青 */
 display: block;
 text-transform: uppercase;
 }
@@ -96,12 +96,12 @@ border-radius: 50%;
 }
 /* 選択中の日付のスタイル */
 .calendar-container .react-calendar__tile--active {
-background: #007bff; /* 青 */
+background: #2a6d44; /* 青 */
 color: white;
 border-radius: 50%;
 }
 .calendar-container .react-calendar__tile--active:hover {
-background: #0056b3;
+background: #2a6d44;
 }
 
 
@@ -135,12 +135,12 @@ font-size: 15px;
 }
 .todo-input:focus {
 outline: none;
-border-color: #007bff;
+border-color: #2a6d44;
 box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
 }
 
 .todo-add-button {
-background-color: #007bff;
+background-color: #2a6d44;
 color: white;
 border: none;
 border-radius: 8px;
@@ -151,7 +151,7 @@ cursor: pointer;
 transition: background-color 0.2s;
 }
 .todo-add-button:hover {
-background-color: #0056b3;
+background-color: #234530;
 }
 
 .todo-list {
@@ -165,7 +165,7 @@ display: flex;
 align-items: center;
 font-size: 16px;
 padding: 12px 8px;
-border-bottom: 1px solid #f0f0f0;
+border-bottom: 1px solid #1f4c31;
 cursor: pointer;
 user-select: none;
 transition: background-color 0.1s;
@@ -198,8 +198,8 @@ color: #aaa;
 text-decoration: line-through;
 }
 .todo-item.completed .todo-checkbox {
-background-color: #007bff;
-border-color: #007bff;
+background-color: #2a6d44;
+border-color: #2a6d44;
 }
 /* チェックマーク（完了時） */
 .todo-item.completed .todo-checkbox::after {

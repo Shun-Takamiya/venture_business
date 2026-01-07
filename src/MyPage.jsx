@@ -40,7 +40,7 @@ return (
     
     {/* 1. ヘッダーロゴ */}
     <header className="mypage-header">
-    <img src="/logo.png" alt="IdeaLab Logo" className="logo-img" />
+    <img src="/logo.png" alt="MyUnipath Logo" className="logo-img" />
     </header>
 
     {/* 2. ユーザープロフィール */}
@@ -57,10 +57,7 @@ return (
     <h3>あなたの担当メンター</h3>
     <div className="mentor-card-list">
         {primaryMentor && (
-        <MentorLinkCard mentor={primaryMentor} role="Generalメンター" />
-        )}
-        {secondaryMentor && (
-        <MentorLinkCard mentor={secondaryMentor} role="Specialメンター" />
+        <MentorLinkCard mentor={primaryMentor}/>
         )}
     </div>
     </section>
@@ -72,7 +69,11 @@ return (
         <span className="arrow-icon">→</span>
     </Link>
     <Link to="/plan" className="action-button secondary">
-        <span>探究を計画する</span>
+        <span>バーチャル自習室に入る</span>
+        <span className="arrow-icon">→</span>
+    </Link>
+    <Link to="/plan" className="action-button secondary">
+        <span>学習を計画する</span>
         <span className="arrow-icon">→</span>
     </Link>
     </section>

@@ -8,13 +8,13 @@ animation: fadeIn 0.3s ease-out;
 /* 1. ヘッダーロゴ */
 .mypage-header {
 margin-bottom: 24px;
-width: 100vw; /* 画面の幅 100% */
+width: 60vw; /* 画面の幅 100% */
 margin-left: -20px; /* 左のパディング(20px)を打ち消す */
 margin-top: -20px; /* 上のパディング(20px)を打ち消す */
 }
 
 .logo-img {
-width: 100%; /* 幅を100%にする */
+width: 60%; /* 幅を60%にする */
 height: auto; /* 高さは自動調整 */
 object-fit: cover; /* 画像の比率を保ったまま全体を覆う */
 }
@@ -34,7 +34,7 @@ object-fit: cover; /* 画像の比率を保ったまま全体を覆う */
 
 .logo-img {
     /* PCでは幅を30%に */
-    width: 100%; 
+    width: 70%; 
     /* PCコンテナの角丸に合わせる */
     border-radius: 20px;
     /* object-fit: cover だと画像が切れる場合、contain に変更 */
@@ -47,7 +47,7 @@ object-fit: cover; /* 画像の比率を保ったまま全体を覆う */
 display: flex;
 align-items: center;
 /* 青系のグラデーション背景 */
-background: linear-gradient(135deg, #74f1bf, #4ef976);
+background: linear-gradient(135deg, #3f8468, #29843e);
 color: white;
 border-radius: 16px;
 padding: 20px;
@@ -70,7 +70,7 @@ flex: 1;
 
 .user-greeting {
 font-size: 14px;
-color: #0758ef; /* 白系の文字 */
+color: #f5dcd3; /* 白系の文字 */
 margin: 0;
 font-weight: 500;
 }
@@ -78,7 +78,7 @@ font-weight: 500;
 .user-name {
 font-size: 20px;
 font-weight: 700;
-color: #0419db; /* 白文字 */
+color: #fadfda;/* 白文字 */
 margin: 2px 0 0 0;
 }
 
@@ -111,7 +111,7 @@ text-decoration: none;
 color: #333;
 transition: box-shadow 0.2s, transform 0.2s;
 /* 左側に青いアクセントボーダー */
-border-left: 4px solid #007bff;
+border-left: 4px solid #386f71;
 }
 .mentor-link-card:hover {
 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
@@ -133,13 +133,14 @@ flex: 1;
 .mentor-link-role {
 font-size: 11px;
 font-weight: 600;
-color: #005fec; /* 緑系から青系に変更 */
+color: #386f71; /* 緑系から青系に変更 */
 }
 
 .mentor-link-name {
 font-size: 15px;
 font-weight: 600;
 margin: 2px 0 0 0;
+color: #386f71; /* 緑系から青系に変更 */
 }
 
 .arrow-icon-small {
