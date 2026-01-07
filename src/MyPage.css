@@ -7,17 +7,29 @@ animation: fadeIn 0.3s ease-out;
 
 /* 1. ヘッダーロゴ */
 .mypage-header {
-margin-bottom: 24px;
-width: 60vw; /* 画面の幅 100% */
-margin-left: -20px; /* 左のパディング(20px)を打ち消す */
-margin-top: -20px; /* 上のパディング(20px)を打ち消す */
-}
+    margin-bottom: 24px;
+    /* スマホの横幅いっぱいに広げる（パディング20px分を左右に加算） */
+    width: calc(100% + 40px); 
+    margin-left: -20px; 
+    margin-top: -20px;
+    
+    /* 中央寄せの設定 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* --- ▼ 修正点: 上下に余白を追加 ▼ --- */
+    padding: 24px 0; /* 上下に24pxの余白，左右は0 */
+    background-color: transparent; /* 必要に応じて背景色を指定 */
+  }
+  
+  .logo-img {
+    width: 60%; /* ロゴの幅を調整 */
+    height: auto;
+    /* ロゴが切れないように contain に変更するのが一般的 */
+    object-fit: contain; 
+  }
 
-.logo-img {
-width: 60%; /* 幅を60%にする */
-height: auto; /* 高さは自動調整 */
-object-fit: cover; /* 画像の比率を保ったまま全体を覆う */
-}
 
 @media (min-width: 481px) {
 .mypage-header {
@@ -39,6 +51,7 @@ object-fit: cover; /* 画像の比率を保ったまま全体を覆う */
     border-radius: 20px;
     /* object-fit: cover だと画像が切れる場合、contain に変更 */
     object-fit: contain; 
+    display: flex;
     justify-content: center;
 }
 }
