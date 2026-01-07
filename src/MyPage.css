@@ -39,6 +39,7 @@ object-fit: cover; /* 画像の比率を保ったまま全体を覆う */
     border-radius: 20px;
     /* object-fit: cover だと画像が切れる場合、contain に変更 */
     object-fit: contain; 
+    justify-content: center;
 }
 }
 
