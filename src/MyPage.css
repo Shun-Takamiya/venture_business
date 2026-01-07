@@ -24,7 +24,7 @@ animation: fadeIn 0.3s ease-out;
   }
   
   .logo-img {
-    width: 60%; /* ロゴの幅を調整 */
+    width: 50%; /* ロゴの幅を調整 */
     height: auto;
     /* ロゴが切れないように contain に変更するのが一般的 */
     object-fit: contain; 
