@@ -21,6 +21,14 @@ import './PlanPage.css';
 import ChatPage from './ChatPage.jsx';
 import './ChatPage.css';
 
+// --- ▼ 追加：新機能をインポート ▼ ---
+import OnlineStudyRoom from './OnlineStudyRoom.jsx';
+import './OnlineStudyRoom.css';
+//import SubjectPage from './SubjectPage.jsx';
+//import './SubjectPage.css';
+// --- ▲ 追加：新機能をインポート ▲ ---
+
+
 // (MentorListPageコンポーネントは変更なし。中身は検索機能など)
 const MentorListPage = () => {
   const [activeTags, setActiveTags] = useState([]);
@@ -134,6 +142,11 @@ function App() {
             <Route path="/plan" element={<PlanPage />} />
             {/* --- ▲ 2. /plan のルートを追加 ▲ --- */}
             <Route path="/chat/:id" element={<ChatPage />} />
+
+            {/* --- ▼ 追加：新機能のルート設定 ▼ --- */}
+            <Route path="/study-room" element={<OnlineStudyRoom />} />
+    
+            {/* --- ▲ 追加：新機能のルート設定 ▲ --- */}
 
           </Routes>
 

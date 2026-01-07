@@ -67,7 +67,7 @@ return (
         <span>メンターを探す</span>
         <span className="arrow-icon">→</span>
     </Link>
-    <Link to="/plan" className="action-button secondary">
+    <Link to="/study-room" className="action-button thirdry">
         <span>バーチャル自習室に入る</span>
         <span className="arrow-icon">→</span>
     </Link>

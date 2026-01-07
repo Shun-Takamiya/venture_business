@@ -1,0 +1,32 @@
+/* src/OnlineStudyRoom.css (末尾に追加) */
+
+.question-footer {
+    margin-top: 40px;
+    padding-bottom: 20px; /* 下に少し余裕を */
+  }
+  
+  .go-to-subjects-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5d4037; /* ヘッダーやタイマーと同じ深めのブラウン */
+    color: white;
+    text-decoration: none;
+    padding: 16px 20px;
+    border-radius: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(93, 64, 55, 0.2);
+    transition: all 0.2s ease;
+  }
+  
+  .go-to-subjects-btn:hover {
+    background-color: #3e2723;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(62, 39, 35, 0.3);
+  }
+  
+  .btn-arrow {
+    font-size: 18px;
+    font-weight: bold;
+  }

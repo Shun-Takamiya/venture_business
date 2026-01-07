@@ -209,6 +209,18 @@ transform: translateY(-2px);
 box-shadow: 0 6px 16px rgba(233, 30, 99, 0.1); /* 影もピンク系に */
 }
 
+.action-button.thirdry {
+    background-color: #c4db44;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+.action-button.thirdry:hover {
+background-color: #d6f10e; /* ホバー時に薄いピンクに */
+transform: translateY(-2px);
+box-shadow: 0 6px 16px rgba(233, 30, 99, 0.1); /* 影もピンク系に */
+}
+
 .arrow-icon {
 font-size: 18px;
 font-weight: bold;
